@@ -10,6 +10,3 @@ netstat -ano | findstr :9000
 docker ps ->zobrazi containery
 docker rm -f <id containeru> -> zavře container s id
 docker compose up -d -> klasický compose ale na pozadí(-d)
-neco1/neco2
-neco1
-eco2
