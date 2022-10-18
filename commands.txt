@@ -21,10 +21,11 @@ t2gh() {
 	#Vezme parameter, přesune se do složky s txt souborem a přidá text pří
 	mo na github do souboru commands.txt
 	
-	cd /mnt/c/Utility/linux-commands/ 
+	cd /Programování/Linux\ commands\ -\ github/linux-commands/ 
 	&& echo -e "$1" >> commands.txt 
 	&& git fetch 
 	&& git pull 
 	&& git add .
 	&& git commit -m "$1" && git push
 }
+ahoj
