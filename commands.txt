@@ -28,3 +28,5 @@ t2gh() {
 	&& git add .
 	&& git commit -m "$1" && git push
 }
+
+#Vim - nastaveni cisel radku
