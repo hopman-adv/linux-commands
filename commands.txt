@@ -8,3 +8,4 @@ vim ~/.bash_aliases
 netstat -ano | findstr :9000
 #Docker compose
 docker ps ->zobrazi containery
+docker rm -f <id containeru> -> zavře container s id
