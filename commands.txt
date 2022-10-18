@@ -10,4 +10,4 @@ netstat -ano | findstr :9000
 docker ps ->zobrazi containery
 docker rm -f <id containeru> -> zavře container s id
 docker compose up -d -> klasický compose ale na pozadí(-d)
-#Funkce posílající věci na github do tohoto souboru	2gh()\ {\#Vezme parameter, přesune se do složky s txt souborem a přidá text přímo na github do souboru commands.txt
+#Funkce posílající věci na github do tohoto souboru	2gh()\{\#Vezme parameter, přesune se do složky s txt souborem a přidá text přímo na github do souboru commands.txt
