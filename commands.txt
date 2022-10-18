@@ -28,4 +28,3 @@ t2gh() {
 	&& git add .
 	&& git commit -m "$1" && git push
 }
-novy radek
