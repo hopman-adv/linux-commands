@@ -32,3 +32,4 @@ t2gh() {
 #Vim - nastaveni cisel radku
 :set number
 #Prejmenovani souboru
+mv souborOrig souborNewName
