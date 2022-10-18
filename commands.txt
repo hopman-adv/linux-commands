@@ -2,12 +2,29 @@
 ssh-keygen -t ed25519 -C "svitora@volny.cz"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
+
+#Bash stuff
 vim ~/.bashrc
 vim ~/.bash_aliases
+source ~/.bashrc
+
 #Windows prikaz na hledani portu
 netstat -ano | findstr :9000
+
 #Docker compose
 docker ps ->zobrazi containery
 docker rm -f <id containeru> -> zavře container s id
 docker compose up -d -> klasický compose ale na pozadí(-d)
-#Funkce posílající věci na github do tohoto souboru	2gh()\{\#Vezme parameter, přesune se do složky s txt souborem a přidá text přímo na github do souboru commands.txt
+
+#Funkce posílající věci na github do tohoto souboru
+t2gh() {
+	#Vezme parameter, přesune se do složky s txt souborem a přidá text pří
+	mo na github do souboru commands.txt
+	
+	cd /mnt/c/Utility/linux-commands/ 
+	&& echo -e "$1" >> commands.txt 
+	&& git fetch 
+	&& git pull 
+	&& git add .
+	&& git commit -m "$1" && git push
+}
