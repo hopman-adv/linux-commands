@@ -6,3 +6,4 @@ vim ~/.bashrc
 vim ~/.bash_aliases
 #Windows prikaz na hledani portu
 netstat -ano | findstr :9000
+#Docker compose
