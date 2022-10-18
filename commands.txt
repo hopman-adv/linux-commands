@@ -30,3 +30,4 @@ t2gh() {
 }
 
 #Vim - nastaveni cisel radku
+:set number
