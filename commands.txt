@@ -21,12 +21,35 @@ t2gh() {
 	#Vezme parameter, přesune se do složky s txt souborem a přidá text pří
 	mo na github do souboru commands.txt
 	
-	cd /mnt/c/Utility/linux-commands/ 
+	cd "/Users/jakub/Programování/Linux commands - github/linux-commands" 
 	&& echo -e "$1" >> commands.txt 
 	&& git fetch 
 	&& git pull 
 	&& git add .
 	&& git commit -m "$1" && git push
 }
+<<<<<<< HEAD
 #Docker
 docker ps - zobrazí běžící containery
+=======
+#Funkce poslání všeho z lokalu na GitHub (třeba pro Obsidian)
+all() {
+        git status
+        echo Can I continue?
+        read YES1
+        if [ "$YES1" = "y" ]; then
+                git fetch && git pull
+                echo Can I continue?
+                read YES2
+                if [ "$YES2" = "y" ]; then
+                        echo Commit message:
+                        read MESSAGE
+                        git add . && git commit -m "$MESSAGE" && git push
+                fi
+        fi
+}
+
+#Vim - nastaveni cisel radku
+:set number
+#Prejmenovani souboru
+mv souborOrig souborNewName
