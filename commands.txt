@@ -28,10 +28,7 @@ t2gh() {
 	&& git add .
 	&& git commit -m "$1" && git push
 }
-<<<<<<< HEAD
-#Docker
-docker ps - zobrazí běžící containery
-=======
+
 #Funkce poslání všeho z lokalu na GitHub (třeba pro Obsidian)
 all() {
         git status
