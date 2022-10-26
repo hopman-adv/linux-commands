@@ -55,3 +55,4 @@ export PATH=$PATH:~/slozka_k_pridani
 #Přidání možnosti spustit/execute na soubor
 chmod +x nazev_souboru - přidá možnost executable
 #Watch command - sleduje v intervalu nějaký příkaz který použijeme
+watch -n 5 date - bude vracet každých 5 sekund datum počítače
