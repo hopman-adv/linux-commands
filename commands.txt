@@ -54,3 +54,4 @@ mv souborOrig souborNewName
 export PATH=$PATH:~/slozka_k_pridani
 #Přidání možnosti spustit/execute na soubor
 chmod +x nazev_souboru - přidá možnost executable
+#Watch command - sleduje v intervalu nějaký příkaz který použijeme
