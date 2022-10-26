@@ -57,3 +57,4 @@ chmod +x nazev_souboru - přidá možnost executable
 #Watch command - sleduje v intervalu nějaký příkaz který použijeme
 watch -n 5 date - bude vracet každých 5 sekund datum počítače
 watch --difference date - bude v default intervalu (2sec), kontrolovat date a zvýrazňovat rozdíly
+watch -d=cumulative date - zvyrazněné rozdíly budou zůstávat
