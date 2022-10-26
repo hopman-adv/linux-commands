@@ -52,3 +52,4 @@ all() {
 mv souborOrig souborNewName
 #Pridání slozky do PATH
 export PATH=$PATH:~/slozka_k_pridani
+#Přidání možnosti spustit/execute na soubor
