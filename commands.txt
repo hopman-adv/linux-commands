@@ -50,4 +50,5 @@ all() {
 :set number
 #Prejmenovani souboru
 mv souborOrig souborNewName
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python310/Scripts/:/mnt/c/Python310/:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Java/jdk-17.0.4.1/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Users/Rynes/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/Amazon/AWSCLIV2/:/mnt/c/Users/Rynes/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2022.2.2/bin:/mnt/c/Users/Rynes/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Programy/kubectl:/snap/bin:/home/jakubr/scripts:~/slozka_k_pridani
+#Pridání slozky do PATH
+export PATH=$PATH:~/slozka_k_pridani
