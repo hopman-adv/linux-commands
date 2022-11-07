@@ -10,6 +10,8 @@ source ~/.bashrc
 
 #Windows prikaz na hledani portu
 netstat -ano | findstr :9000
+#Kill service dle PID (posledni cislo z nestat)
+taskkill /PID 11692 /F
 
 #Docker compose
 docker ps ->zobrazi containery
@@ -58,3 +60,5 @@ chmod +x nazev_souboru - přidá možnost executable
 watch -n 5 date - bude vracet každých 5 sekund datum počítače
 watch --difference date - bude v default intervalu (2sec), kontrolovat date a zvýrazňovat rozdíly
 watch -d=cumulative date - zvyrazněné rozdíly budou zůstávat
+
+
