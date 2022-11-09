@@ -62,3 +62,5 @@ watch --difference date - bude v default intervalu (2sec), kontrolovat date a zv
 watch -d=cumulative date - zvyrazněné rozdíly budou zůstávat
 
 
+
+#uloží i read-only file
