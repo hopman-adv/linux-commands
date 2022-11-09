@@ -64,3 +64,8 @@ watch -d=cumulative date - zvyrazněné rozdíly budou zůstávat
 
 
 #uloží i read-only file
+:w sudo dockerd tee % -> w - zapisuje do bufferu, sudo dockerd - spustí shell jako admin, tee redirectne vim :w do výstupu, % - aktuální soubor
+
+s
+
+:w sudo dockerd tee % -> w - zapisuje do bufferu, sudo dockerd - spustí shell jako admin, tee redirectne vim :w do výstupu, % - aktuální soubor
