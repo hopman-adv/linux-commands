@@ -69,6 +69,4 @@ watch -d=cumulative date - zvyrazněné rozdíly budou zůstávat
 s
 
 :w sudo dockerd tee % -> w - zapisuje do bufferu, sudo dockerd - spustí shell jako admin, tee redirectne vim :w do výstupu, % - aktuální soubor
-watch -n 1 curl
-watch -n 1 curl
 watch -n 1 'curl -XGET -H 'X-NetStar-ID: B51A31B6-5B0' 'http://10.203.50.179:8080/api/v1/devices' >> output.txt --> pošle každou sekundu request a výstup uloží do souboru, nečeká na něj
