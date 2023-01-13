@@ -69,3 +69,5 @@ watch -d=cumulative date - zvyrazněné rozdíly budou zůstávat
 s
 
 :w sudo dockerd tee % -> w - zapisuje do bufferu, sudo dockerd - spustí shell jako admin, tee redirectne vim :w do výstupu, % - aktuální soubor
+watch -n 1 curl
+watch -n 1 curl
