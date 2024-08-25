@@ -31,23 +31,29 @@ t2gh() {
 	&& git commit -m "$1" && git push
 }
 
-#Funkce poslání všeho z lokalu na GitHub (třeba pro Obsidian)
+#Funkce poslání všeho z lokalu na GitHub (třeba pro Obsidian), vyplní se datum, když chybí commit message
 all() {
         git status
-        echo Can I continue?
+        echo "Can I continue?"
         read YES1
-        if [ "$YES1" = "y" ]; then
+        if [ "$YES1" = "y" ];
+        then
                 git fetch && git pull
-                echo Can I continue?
+                echo "Can I continue?"
                 read YES2
-                if [ "$YES2" = "y" ]; then
-                        echo Commit message:
+                if [ "$YES2" = "y" ];
+                then
+                        echo "Commit message:"
                         read MESSAGE
-                        git add . && git commit -m "$MESSAGE" && git push
+                        if [ "$MESSAGE" =  "" ];
+                        then
+                                git add . && git commit -m "$(date)" && git push
+                        else
+                                git add . && git commit -m "$MESSAGE" && git push
+                        fi
                 fi
         fi
 }
-
 #Vim - nastaveni cisel radku
 :set number
 #Prejmenovani souboru
